@@ -3,6 +3,7 @@ package com.example.bookstorespring.entity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties;
 
 import javax.persistence.*;
 

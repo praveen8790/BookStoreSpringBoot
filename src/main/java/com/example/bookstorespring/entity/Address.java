@@ -1,5 +1,6 @@
 package com.example.bookstorespring.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -7,19 +8,19 @@ import lombok.Setter;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.criteria.CriteriaBuilder;
-import java.util.List;
-import java.util.UUID;
+import javax.persistence.OneToOne;
 
+@Entity
 @Getter
 @Setter
 @NoArgsConstructor
-@Entity
-public class OrderDetails {
+public class Address {
     @Id
     @Column(name = "id", nullable = false)
     private Integer id;
-    @OneToMany
-    private List<BookDetails> books;
+    private String city;
+    private String landmark;
+    @OneToOne(mappedBy = "address")
+    private DAOUser user;
+
 }
