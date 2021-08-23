@@ -25,9 +25,16 @@ public class DAOUser {
 	private String name;
 	@Column
 	private String mobile;
-	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "address_id", referencedColumnName = "id")
-	private Address address;
+
+//	@OneToOne(cascade = {CascadeType.MERGE,CascadeType.ALL,CascadeType.DETACH,CascadeType.PERSIST,CascadeType.REFRESH,CascadeType.REMOVE})
+//	@JoinColumn(name = "address_id", referencedColumnName = "id")
+//	private Address address;
+
+	private String city;
+	private String landmark;
+	private String pincode;
+	private String locality;
+	private String address;
 
 
 

@@ -7,6 +7,7 @@ import com.example.bookstorespring.entity.UserDTO;
 import com.example.bookstorespring.service.JwtUserDetailsService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
