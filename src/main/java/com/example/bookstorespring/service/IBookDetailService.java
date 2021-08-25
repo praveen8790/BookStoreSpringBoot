@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface IBookDetailService {
     List<BookDetails> getAll();
+    BookDetails get(Integer id);
 }

@@ -17,4 +17,9 @@ public class BookDetailService implements IBookDetailService {
     public List<BookDetails> getAll() {
         return bookDetailsRepository.findAll();
     }
+
+    @Override
+    public BookDetails get(Integer id){
+        return bookDetailsRepository.findBookDetailsById(id);
+    }
 }
